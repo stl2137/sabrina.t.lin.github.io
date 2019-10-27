@@ -8,4 +8,6 @@ output:
 
 ![](http://giphygifs.s3.amazonaws.com/media/Cx2qDJYjwq1ji/giphy.gif)
 
+Yes, I am always hungry. 
 
+If you are curious about what I am hungry for, learn more [here](about.html)!
