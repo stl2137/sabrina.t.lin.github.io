@@ -8,7 +8,11 @@ navbar:
     - icon: fa-envelope fa-lg
       href: mailto:stl2137@cumc.columbia.edu
     - icon: fa-github fa-lg
+<<<<<<< HEAD
       href: https://github.com/stl2137
+=======
+      href: http://github.com/stl2137/
+>>>>>>> 9493ecb1a4db0ffb24c6756c42fecd69517c3379
 output:
   html_document:
     theme: sandstone
