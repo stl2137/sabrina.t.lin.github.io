@@ -19,3 +19,34 @@ instacart_data <-
   sample_n(5000)
 ```
 
+
+## Bar chart showing number of purchases for each hour
+```{r}
+instacart_data %>% 
+  ggplot(aes(x = order_hour_of_day)) +
+  geom_bar() +
+  scale_x_continuous(breaks = c(0, 3, 6, 9, 12, 15, 18, 21))
+  
+```
+
+## Distribution of orders by departments for each hour
+```{r}
+instacart_data %>% 
+  group_by(order_hour_of_day, department) %>% 
+  count(department) %>% 
+  ggplot(aes(x = department, y = order_hour_of_day, color = department)) + 
+  geom_boxplot()
+
+
+```
+
+## 
+
+```{r}
+instacart_data %>% 
+  filter(
+    department == "snacks"
+  ) %>% 
+  
+```
+
