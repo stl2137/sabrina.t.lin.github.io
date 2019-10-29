@@ -1,13 +1,19 @@
 ---
-title: "plotly"
-output: html_document
+title: "Untitled"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
-```{r}
+```{r setup, include=FALSE}
+library(flexdashboard)
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
+```
 
+```{r}
 knitr::opts_chunk$set(
 	echo = TRUE,
 	warning = FALSE,
@@ -38,29 +44,40 @@ instacart_data <-
 ```
 
 
-## Bar chart showing number of purchases for each hour
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
 ```{r}
-instacart_data %>% 
+hourly_chart <- instacart_data %>% 
   ggplot(aes(x = order_hour_of_day)) +
   geom_bar() +
   scale_x_continuous(breaks = c(0, 3, 6, 9, 12, 15, 18, 21))
-  
+
+ggplotly(hourly_chart)
 ```
 
-## Distribution of orders by departments for each hour
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
 ```{r}
-instacart_data %>% 
+boxplot_instacart <- instacart_data %>% 
   group_by(order_hour_of_day, department) %>% 
   count(department) %>% 
   ggplot(aes(x = department, y = order_hour_of_day, color = department)) + 
   geom_boxplot() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+ggplotly(boxplot_instacart)
 ```
 
-## 
+### Chart C
 
 ```{r}
-instacart_data %>% 
+snacks_chart <- instacart_data %>% 
   filter(
     department == "snacks"
   ) %>%
@@ -75,6 +92,7 @@ instacart_data %>%
     x = "Aisle",
     y = "Number of Products Ordered" 
   ) 
-  
+
+ggplotly(snacks_chart)
 ```
 
