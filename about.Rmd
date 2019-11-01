@@ -5,5 +5,12 @@ output:
     toc: true
     toc_float: true
 ---
+![](Xian.jpg)
 
-Hi!
+Hi! My name is Sabrina Lin and I am currently a first-year Biostatistics master's student at Columbia University Mailman School of Public Health. As a future biostatistican, I want to use my skills to address public health disparities and conduct research. I sometimes also look at Major League Baseball data (Go Giants!) for fun. My resume is attached [here](Resume_10_10_19.pdf) for your viewing pleasure, in addition to being accessible below. 
+
+I also love food and love to cook; my life dream is to be the next Ina Garten. From cheap, fast eats to Michelin star establishments and from recipes from my mom to Bible equivalent cookbook recipes, I have experienced a vast range of culinary flavors and experiences and am always looking for more to try. 
+
+# Resume
+
+

@@ -43,17 +43,23 @@ instacart_data <-
 
 
 ## Bar chart showing number of purchases for each hour
+
+### ggplot version
 ```{r}
 instacart_data %>% 
   ggplot(aes(x = order_hour_of_day)) +
   geom_bar() +
   scale_x_continuous(breaks = c(0, 3, 6, 9, 12, 15, 18, 21))
+```
 
+## plotly version
+
+```{r}
 instacart_data %>% 
   count(order_hour_of_day) %>% 
   plot_ly(x = ~order_hour_of_day, y = ~n, type = "bar")
-  
 ```
+
 
 ## Distribution of orders by departments for each hour
 ```{r}
@@ -66,7 +72,9 @@ instacart_data %>%
 
 ```
 
-## 
+## Popularity of Snacks Ordered
+
+### ggplot version
 
 ```{r}
 instacart_data %>% 
@@ -84,7 +92,10 @@ instacart_data %>%
     x = "Aisle",
     y = "Number of Products Ordered" 
   ) 
+```
 
+### Plotly version
+```{r}
 instacart_data %>% 
   filter(
     department == "snacks"
