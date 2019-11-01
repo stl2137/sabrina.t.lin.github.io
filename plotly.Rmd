@@ -1,6 +1,10 @@
 ---
-title: "plotly"
-output: html_document
+title: "Plotly Examples"
+output: 
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_float: true
 ---
 
 ```{r}
@@ -44,6 +48,10 @@ instacart_data %>%
   ggplot(aes(x = order_hour_of_day)) +
   geom_bar() +
   scale_x_continuous(breaks = c(0, 3, 6, 9, 12, 15, 18, 21))
+
+instacart_data %>% 
+  count(order_hour_of_day) %>% 
+  plot_ly(x = ~order_hour_of_day, y = ~n, type = "bar")
   
 ```
 
@@ -55,6 +63,7 @@ instacart_data %>%
   ggplot(aes(x = department, y = order_hour_of_day, color = department)) + 
   geom_boxplot() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
 ```
 
 ## 
@@ -75,6 +84,18 @@ instacart_data %>%
     x = "Aisle",
     y = "Number of Products Ordered" 
   ) 
-  
+
+instacart_data %>% 
+  filter(
+    department == "snacks"
+  ) %>%
+  count(aisle) %>% 
+  mutate(
+    aisle = fct_reorder(aisle, n)
+  ) %>% 
+  mutate(
+    aisle = as.factor(aisle)
+  ) %>% 
+  plot_ly(x = ~aisle, y = ~n, color = ~aisle, type = "bar")
 ```
 

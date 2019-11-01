@@ -50,12 +50,9 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-hourly_chart <- instacart_data %>% 
-  ggplot(aes(x = order_hour_of_day)) +
-  geom_bar() +
-  scale_x_continuous(breaks = c(0, 3, 6, 9, 12, 15, 18, 21))
-
-ggplotly(hourly_chart)
+instacart %>% 
+  count(order_hour_of_day) %>% 
+  plot_ly(x = ~order_hour_of_day, y = ~n, type = "bar")
 ```
 
 Column {data-width=350}
@@ -77,7 +74,7 @@ ggplotly(boxplot_instacart)
 ### Chart C
 
 ```{r}
-snacks_chart <- instacart_data %>% 
+instacart_data %>% 
   filter(
     department == "snacks"
   ) %>%
@@ -85,14 +82,9 @@ snacks_chart <- instacart_data %>%
   mutate(
     aisle = fct_reorder(aisle, n)
   ) %>% 
-  ggplot(aes(x = aisle, y = n, fill = aisle)) +
-  geom_col() +
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-  labs(
-    x = "Aisle",
-    y = "Number of Products Ordered" 
-  ) 
-
-ggplotly(snacks_chart)
+  mutate(
+    aisle = as.factor(aisle)
+  ) %>% 
+  plot_ly(x = ~aisle, y = ~n, color = ~aisle, type = "bar")
 ```
 
