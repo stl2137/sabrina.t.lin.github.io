@@ -5,12 +5,14 @@ navbar:
   right:
     - text: "About"
       href: about.html
-    - text: Examples
+    - text: "Resume"
+      href: resume.html  
+    - text: Previous Projects
       menu:
-      - text: "Plotly"
-        href: plotly.html
-      - text: "Dashboard"
-        href: dashboard.html
+      - text: "Data Science 1 Final Project"
+        href: ds_1_page.html
+#      - text: "Dashboard"
+#        href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:stl2137@cumc.columbia.edu
     - icon: fa-github fa-lg
