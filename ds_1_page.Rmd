@@ -6,5 +6,21 @@ output:
     toc_float: true
 ---
 
-This project was completed in the Fall of 2019 during my first semester at Columbia. 
+This project was completed in the Fall of 2019 during my first semester at Columbia.
+
+# Final Project Website
+
+The link to the final project website is [here](https://abcdefg781.github.io/ds_final_project/index.html)!
+
+# Project Overview
+
+In a team with three other members, I was assigned to apply the data science skills and tools learned from the semester. 
+
+The purpose and objectives of our project are listed on our website [link](https://abcdefg781.github.io/ds_final_project/index.html).
+
+# Project Reflection
+
+After completing this project, I learned the importance of synthesizing and highlighting results of interest garnered from our analysis. This hands-on experience with such a massive and uncleaned dataset taught me the importance of good data tidying, in addition to the importance of having clear questions in mind prior to conducting analysis. 
+
+
 

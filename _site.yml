@@ -15,6 +15,8 @@ navbar:
 #        href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:stl2137@cumc.columbia.edu
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/sabrina-lin-1a6530117/
     - icon: fa-github fa-lg
       href: http://github.com/stl2137/
 output:

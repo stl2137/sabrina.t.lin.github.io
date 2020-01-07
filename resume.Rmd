@@ -4,6 +4,7 @@ output:
     toc: true
     toc_float: true
 ---
+
 # Resume
 
 The pdf attachment of my resume is also available [here](Resume_10_10_19.pdf).
@@ -107,5 +108,7 @@ The pdf attachment of my resume is also available [here](Resume_10_10_19.pdf).
 
   MARCH 2017
   - Utilized SAS and Tableau to analyze travel agency data to find correlations between location and number of bookings for potential marketing purposes
+  
+
 
 

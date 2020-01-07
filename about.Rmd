@@ -9,10 +9,18 @@ output:
 
 ![](Xian.jpg)
 
-Hi! My name is Sabrina Lin, and I am currently a first-year Biostatistics master's student at Columbia University Mailman School of Public Health. As a future biostatistican, I want to use my skills to address public health disparities and conduct research to improve people's healthcare needs. I sometimes also look at Major League Baseball data (Go Giants!) for fun. My resume is attached [here](Resume_10_10_19.pdf) for your viewing pleasure, in addition to being accessible below. 
+Hi! My name is Sabrina Lin, and I am currently a first-year Biostatistics master's student at Columbia University Mailman School of Public Health. As a future biostatistican, I want to use my skills to address public health disparities and conduct research to improve people's healthcare needs. I sometimes also look at Major League Baseball data (Go Giants!) for fun. My resume is attached [here](Resume_10_10_19.pdf) for your viewing pleasure, in addition to being accessible on my website [here](resume.html). 
 
-I also love food and love to cook; my life dream is to be the next Ina Garten. From cheap, fast eats to Michelin star establishments and from recipes from my mom to Bible-equivalent cookbook recipes, I have experienced a vast range of culinary flavors and experiences and am always looking for more to try. 
+# Personal Interests and Hobbies 
 
+While at Columbia, I am continuing several interests to balance my studies.
 
+I am involved in the Columbia University Medical Campus Symphony Orchestra as a clarinetist, allowing me to continue making music! During my undergraduate studies at Loyola University Chicago, I was also involved in the school pep band, the Band of Wolves. 
+
+I love food and love to cook; my life dream is to be the next Ina Garten. From cheap, fast eats to Michelin star establishments and from recipes from my mom to Bible-equivalent cookbook recipes, I have experienced a vast range of culinary flavors and experiences and am always looking for more to try. 
+
+I am also an avid hiker and try to go to at least one national park per year. My favorite national park is Yosemite, specifically during winter. 
+
+Most recently, I have started throwing pottery. Even though I have made a few bowls and mugs, I am looking forward to further refining my techniques and making a variety of ceramics. 
 
 
